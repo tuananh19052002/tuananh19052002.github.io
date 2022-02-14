@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MEnunhas</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>  </head>
+  <body style="background-color: rgb(255, 255, 255);">
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      ul{
+        list-style-type: none;
+      }
+      
+      nav{
+        background-color: aqua;
+      }
+     nav #main-menu li a{
+          color:  wheat;
+          text-decoration: none;
+          display: block;
+          padding: 8px 15px;
+      }
+      nav #main-menu li:hover a{
+          background: violet;
+          transition: all 0.3s;
+      }
+      #toggle {
+          display: none;
+          background: aqua;
+          color: white;
+          text-align: right;
+          font-size: 20px;
+          cursor: pointer;
+      }
+      @media screen and (max-width: 2000px) {
+          #main-menu{
+              flex-direction: column;
+              text-align: center;
+          }
+          #toggle {
+              display: block;
+          }
+          nav{
+              display: none;
+          }
+      }
+    #main-menu{
+        display: flex;
+      }
+      ul#main-menu li{
+        padding: 0px 20px;
+      }
+      ul#main-menu li a{
+          color: white;
+          text-decoration: none;
+          display: block;
+          padding: 8px 15px;
+          font-size: 30px;
+
+      }
+      #logo{
+       text-align: center;
+       width: 1px;
+       height: 1px;
+      }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('nav').slideToggle();
+            });
+        })
+    </script>
+    <div id="wrapper">
+      <div id="header">
+        <div id="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="logo">
+        
+        </div>
+        <nav>
+            <ul id="main-menu">
+              <li><a href="">Trang chủ</a></li>
+              <li ><a href="dang_nhap.html">Đăng nhập</a></li>
+              <li > <a href="">Giới thiệu</a></li>
+              <li ><a href="">Liên hệ</a></li>
+              <li><a href="">Số điện thoại liên hệ</a></li>
+              
+            </ul>
+          </nav>
+      </div>
+    </div>
+    <div>
+      <a href=""><i class="fas fa-house"></i></a>
+    </div>
+    <div><ins>                      </ins></div>
+  </body>
+</html>
